@@ -1,20 +1,15 @@
 #include <controller/TalonSRX.h>
 
-class _TalonSRX : public TalonSRX
+void TalonSRX::stop()
 {
-public:
-  void command(double power)
-  {
-    executePwm(100);
-  };
+  this->executePwm(0);
+}
 
-  /**
-   * Sets the idle mode for the TalonSRX
-   */
-  void setIdleMode(IdleMode mode){};
+void TalonSRX::command(double power)
+{
+  this->executePwm(100);
+}
 
-  void stop()
-  {
-    executePwm(0);
-  };
-};
+void TalonSRX::setIdleMode(IdleMode mode)
+{
+}

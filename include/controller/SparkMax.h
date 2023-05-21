@@ -18,5 +18,6 @@ public:
   };
 
   void stop();
+  void command(double power);
   void setIdleMode(IdleMode mode);
 };

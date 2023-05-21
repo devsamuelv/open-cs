@@ -1,11 +1,7 @@
 #include <Arduino.h>
 #include <PwmDevice.h>
 
-class _PwmDevice : protected PwmDevice
+void PwmDevice::executePwm(int dutyCycle)
 {
-public:
-  void executePwm(int dutyCycle)
-  {
-    analogWrite(pin, dutyCycle);
-  }
+  analogWrite(this->pin, dutyCycle);
 };
