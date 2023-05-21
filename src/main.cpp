@@ -3,7 +3,7 @@
 #include <thread>
 
 #include <controller/TalonSRX.h>
-#include <controller/SparkMax.h>
+#include <controller/SparkMax.hpp>
 
 TalonSRX frontLeft = TalonSRX(1);
 TalonSRX frontRight = TalonSRX(2);

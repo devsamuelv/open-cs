@@ -1,5 +1,12 @@
 #include <controller/TalonSRX.h>
 
+TalonSRX::TalonSRX(int pin)
+{
+  this->pin = pin;
+  this->frequency = 10;
+  this->channel = 0;
+}
+
 void TalonSRX::stop()
 {
   this->executePwm(0);

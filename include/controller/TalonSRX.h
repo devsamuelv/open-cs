@@ -9,12 +9,7 @@ public:
    *
    * @param pin
    */
-  TalonSRX(int pin)
-  {
-    this->pin = pin;
-    this->channel = 0;
-    this->frequency = 10;
-  };
+  TalonSRX(int pin);
 
   void setIdleMode(IdleMode mode);
   void command(double power);

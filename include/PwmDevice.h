@@ -1,3 +1,5 @@
+#pragma once
+
 class PwmDevice
 {
 protected:
@@ -8,6 +10,5 @@ protected:
   void executePwm(int dutyCycle);
 
 public:
-  PwmDevice(int pin, int frequency, int channel);
   PwmDevice();
 };

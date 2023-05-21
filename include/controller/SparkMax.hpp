@@ -2,6 +2,8 @@
 #include <IdleMode.h>
 #include <PwmDevice.h>
 
+#pragma once
+
 class SparkMax : protected PwmDevice
 {
 public:
@@ -10,12 +12,7 @@ public:
    *
    * @param pin
    */
-  SparkMax(int pin)
-  {
-    this->pin;
-    this->frequency = 10;
-    this->channel = 0;
-  };
+  SparkMax(int pin);
 
   void stop();
   void command(double power);
