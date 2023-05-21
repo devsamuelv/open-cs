@@ -1,0 +1,5 @@
+enum IdleMode
+{
+  BRAKE,
+  COAST,
+};
