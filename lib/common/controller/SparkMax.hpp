@@ -1,8 +1,6 @@
 #include <Arduino.h>
-#include <IdleMode.h>
-#include <PwmDevice.h>
-
-#pragma once
+#include "IdleMode.h"
+#include "PwmDevice.h"
 
 class SparkMax : protected PwmDevice
 {

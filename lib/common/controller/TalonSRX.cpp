@@ -1,4 +1,4 @@
-#include <controller/TalonSRX.h>
+#include "controller/TalonSRX.hpp"
 
 TalonSRX::TalonSRX(int pin)
 {

@@ -1,5 +1,5 @@
-#include <PwmDevice.h>
-#include <IdleMode.h>
+#include "IdleMode.h"
+#include "PwmDevice.h"
 
 class TalonSRX : protected PwmDevice
 {

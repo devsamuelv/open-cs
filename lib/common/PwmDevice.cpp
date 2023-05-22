@@ -1,5 +1,7 @@
 #include <Arduino.h>
-#include <PwmDevice.h>
+#include "PwmDevice.h"
+
+PwmDevice::PwmDevice(){};
 
 void PwmDevice::executePwm(int dutyCycle)
 {

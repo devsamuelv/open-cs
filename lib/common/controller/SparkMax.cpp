@@ -1,8 +1,8 @@
-#include <controller/SparkMax.h>
+#include "SparkMax.hpp"
 
 SparkMax::SparkMax(int pin)
 {
-  this->pin;
+  this->pin = pin;
   this->frequency = 10;
   this->channel = 0;
 }

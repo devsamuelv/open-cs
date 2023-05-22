@@ -2,8 +2,8 @@
 #include <iostream>
 #include <thread>
 
-#include <controller/TalonSRX.h>
 #include <controller/SparkMax.hpp>
+#include <controller/TalonSRX.hpp>
 
 TalonSRX frontLeft = TalonSRX(1);
 TalonSRX frontRight = TalonSRX(2);
